@@ -15,14 +15,15 @@ namespace GrassyWomen.Data
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderDetail> OrderDetails { get; set; }
 
-
+        public GrassyWomenDbContext() : base()
+        {
+        }
 
         public  GrassyWomenDbContext(DbContextOptions<GrassyWomenDbContext> options) : base(options)
         {
         }
-        public GrassyWomenDbContext() : base()
-        {
-        }
+
+       
 
 
     }

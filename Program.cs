@@ -19,9 +19,6 @@ namespace GrassyWomen
             builder.Services.AddDbContext<GrassyWomenDbContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("GrassyWomenContext") ?? throw new InvalidOperationException("Connection string 'GrassyWomenContext' not found.")));
 
-            ;
-
-
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
